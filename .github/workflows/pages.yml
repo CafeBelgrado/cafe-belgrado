@@ -34,6 +34,9 @@ jobs:
       - name: Build site from RSS
         run: python build.py
 
+      - name: Apply visual theme and NBA imagery
+        run: python postprocess.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
